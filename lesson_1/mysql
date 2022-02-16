@@ -1,0 +1,12 @@
+CREATE TABLE tag(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    name TEXT NOT NULL
+)
+
+// tạo bảng tác giả:
+CREATE TABLE author (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    name TEXT NOT NULL
+)
+
+// tạo bảng post:
