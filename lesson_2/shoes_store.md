@@ -103,7 +103,8 @@ CREATE TABLE color_product(
 	id_color INT NOT NULL,
     id_product INT,
     PRIMARY KEY(id_color),
-    FOREIGN KEY (id_color) REFERENCES color(id)
+    FOREIGN KEY (id_color) REFERENCES color(id),
+    FOREIGN KEY (id_product) REFERENCES product(id)
 )
 ```
 
