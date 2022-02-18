@@ -1,11 +1,13 @@
 ## Quản lý cửa hàng
-**TẠO DATABASE SHOES_STORE
+
+\*\*TẠO DATABASE SHOES_STORE
 
 ```sql
 CREATE DATABASE shoes_store
 ```
 
-***Tạo bảng  brand***
+**_Tạo bảng brand_**
+
 ```sql
 CREATE TABLE brand (
 	id INT PRIMARY KEY AUTO_INCREMENT,
@@ -13,7 +15,7 @@ CREATE TABLE brand (
 )
 ```
 
-***Tạo bảng gender***
+**_Tạo bảng gender_**
 
 ```sql
 CREATE TABLE gender(
@@ -22,7 +24,7 @@ CREATE TABLE gender(
 )
 ```
 
-***Tạo bảng size***
+**_Tạo bảng size_**
 
 ```sql
 CREATE TABLE size(
@@ -30,7 +32,8 @@ CREATE TABLE size(
     size INT NOT NULL
 )
 ```
-***Tạo bảng màu sắc sp***
+
+**_Tạo bảng màu sắc sp_**
 
 ```sql
 CREATE TABLE color(
@@ -38,7 +41,8 @@ CREATE TABLE color(
     name TEXT NOT NULL
 )
 ```
-***Tạo bảng category***
+
+**_Tạo bảng category_**
 
 ```sql
 CREATE TABLE category(
@@ -49,7 +53,7 @@ CREATE TABLE category(
 )
 ```
 
-***Tạo bảng sản phẩm***
+**_Tạo bảng sản phẩm_**
 
 ```sql
 CREATE TABLE product(
@@ -68,7 +72,8 @@ CREATE TABLE product(
 )
 ```
 
-***Tạo bảng giá bán***
+**_Tạo bảng giá bán_**
+
 ```sql
 CREATE TABLE price(
 	id INT PRIMARY KEY AUTO_INCREMENT,
@@ -79,7 +84,7 @@ CREATE TABLE price(
 )
 ```
 
-***Tạo bảng size-product***
+**_Tạo bảng size-product_**
 
 ```sql
 CREATE TABLE size_product(
@@ -91,7 +96,7 @@ CREATE TABLE size_product(
 )
 ```
 
-***Tạo bảng color_product***
+**_Tạo bảng color_product_**
 
 ```sql
 CREATE TABLE color_product(
@@ -102,21 +107,40 @@ CREATE TABLE color_product(
 )
 ```
 
-
 ![image](https://user-images.githubusercontent.com/95128548/154494999-e7d67f3c-6eeb-4fa8-a6fa-01f5cdaf3692.png)
 
+## Chèn chữ liệu vào bảng bằng INSERT INTO
 
+**_Chèn DL bảng brand_**![image](https://user-images.githubusercontent.com/95128548/154711891-e49afca9-a894-4dff-bedd-9246c3c93253.png)
 
+**_Chèn DL bảng category_**
 
+![image](https://user-images.githubusercontent.com/95128548/154712234-8202bc6b-8f58-4c92-b23d-6e7d111d9c3b.png)
 
+**_Chèn DL bảng Color_**
 
+![image](https://user-images.githubusercontent.com/95128548/154713397-7f2c8c63-8063-4b43-a814-c0c93c065f4e.png)
 
+**_Chèn DL bảng gender_**
 
+![image](https://user-images.githubusercontent.com/95128548/154712483-df8c8c67-2ee6-4d16-84d0-5153f0445fb0.png)
 
+**_Chèn DL bảng size_**
 
+![image](https://user-images.githubusercontent.com/95128548/154712562-ccc1a67b-6a41-41b8-9315-e80e3150941c.png)
 
+**_Chèn DL bảng product_**
 
+![image](https://user-images.githubusercontent.com/95128548/154712729-f5d69669-061e-49a0-98c1-1e5d11ca4958.png)
 
+**_chèn DL bảng price_**
 
+![image](https://user-images.githubusercontent.com/95128548/154712852-19e6ba66-e65d-4fed-ac9c-6f666945d4ac.png)
 
+**_Chèn DL bảng color_product_**
 
+![image](https://user-images.githubusercontent.com/95128548/154712946-76f41700-9d99-4359-8af5-254f7c20d02c.png)
+
+**_Chèn DL bảng size_product_**
+
+![image](https://user-images.githubusercontent.com/95128548/154713149-6d1feae7-f6ff-4434-93d3-127da6f052dd.png)
