@@ -1,6 +1,6 @@
 ## Quản lý cửa hàng
 
-\*\*TẠO DATABASE SHOES_STORE
+**TẠO DATABASE SHOES_STORE**
 
 ```sql
 CREATE DATABASE shoes_store
@@ -112,7 +112,9 @@ CREATE TABLE color_product(
 
 ## Chèn chữ liệu vào bảng bằng INSERT INTO
 
-**_Chèn DL bảng brand_**![image](https://user-images.githubusercontent.com/95128548/154711891-e49afca9-a894-4dff-bedd-9246c3c93253.png)
+**_Chèn DL bảng brand_**
+
+![image](https://user-images.githubusercontent.com/95128548/154711891-e49afca9-a894-4dff-bedd-9246c3c93253.png)
 
 **_Chèn DL bảng category_**
 
