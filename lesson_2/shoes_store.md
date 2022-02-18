@@ -107,7 +107,7 @@ CREATE TABLE color_product(
 )
 ```
 
-![image](https://user-images.githubusercontent.com/95128548/154494999-e7d67f3c-6eeb-4fa8-a6fa-01f5cdaf3692.png)
+![image](https://user-images.githubusercontent.com/95128548/154717561-c46e3f58-180e-49ca-9cca-c369b2e9ce1b.png)
 
 ## Chèn chữ liệu vào bảng bằng INSERT INTO
 
