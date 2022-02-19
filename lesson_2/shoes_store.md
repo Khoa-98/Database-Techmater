@@ -108,6 +108,96 @@ CREATE TABLE color_product(
 )
 ```
 
+
+***Tạo bảng user***
+```sql
+CREATE TABLE users(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    full_name TEXT NOT NULL,
+    mobile VARCHAR(10) NOT NULL,
+    email TEXT NOT NULL,
+    password TEXT NOT NULL,
+    avatar TEXT NOT NULL,
+    role INT NOT NULL
+)
+```
+
+***Tạo bảng address***
+```sql
+CREATE TABLE address(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    id_users INT,
+    kindOfAddress ENUM('Company', 'Home'),
+    address TEXT NOT NULL,
+    FOREIGN KEY (id_users) REFERENCES users(id)
+)
+```
+
+***Tạo bảng chi nhánh-branch***
+```sql
+CREATE TABLE branch(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    name_br TEXT NOT NULL,
+    address_br TEXT NOT NULL,
+    id_admin_br INT NOT NULL,
+    mobile_br VARCHAR(10) NOT NULL,
+    stk_br INT NOT NULL,
+    FOREIGN KEY (id_admin_br) REFERENCES users(id)
+)
+```
+
+***Tạo bảng giỏ hàng-cart***
+```sql
+CREATE TABLE cart(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    id_users INT NOT NULL,
+    FOREIGN KEY (id_users) REFERENCES users(id)
+)
+```
+
+***Tạo bảng cart_product***
+```sql
+CREATE TABLE cart_product(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    id_cart INT NOT NULL,
+    id_product INT NOT NULL,
+    quantity INT NOT NULL,
+    FOREIGN KEY (id_cart) REFERENCES cart(id),
+    FOREIGN KEY (id_product) REFERENCES product(id)
+)
+```
+
+***Tạo bảng order-ĐẶt hàng***
+```sql
+CREATE TABLE orders(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    id_branch INT NOT NULL,
+    id_admin INT NOT NULL,
+    id_client INT NOT NULL,
+    create_at DATE NOT NULL,
+    status TEXT NOT NULL,
+    payment_method ENUM('trả trước', 'COD'),
+    FOREIGN KEY (id_branch) REFERENCES branch(id),
+    FOREIGN KEY (id_admin) REFERENCES users(id),
+    FOREIGN KEY (id_client) REFERENCES users(id)
+)
+```
+
+***Tạo bảng order_product***
+```sql
+CREATE TABLE order_product(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    id_order INT NOT NULL,
+    id_product INT NOT NULL,
+    quantity INT NOT NULL,
+    FOREIGN KEY (id_order) REFERENCES orders(id),
+    FOREIGN KEY (id_product) REFERENCES product(id)
+)
+```
+
+
+
+
 ![image](https://user-images.githubusercontent.com/95128548/154717561-c46e3f58-180e-49ca-9cca-c369b2e9ce1b.png)
 
 ## Chèn chữ liệu vào bảng bằng INSERT INTO
