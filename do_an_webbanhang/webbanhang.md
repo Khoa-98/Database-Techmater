@@ -12,6 +12,7 @@ CREATE TABLE role(
 	id INT PRIMARY KEY AUTO_INCREMENT ,
 	name TEXT NOT NULL
 )
+
 ```
 ***Tạo bảng users***
 ```sql
@@ -21,7 +22,7 @@ CREATE TABLE users(
 	gender ENUM ('male', 'female'),
 	avatar TEXT,
 	email TEXT NOT NULL,
-	phonenumber VARCHAR(10),
+	phonenumber VARCHAR(13),
 	address TEXT NOT NULL,
 	password TEXT NOT NULL,
 	role_id INT,
@@ -120,7 +121,7 @@ CREATE TABLE orders(
 	client_id INT,
 	fullname TEXT NOT NULL ,
 	address TEXT NOT NULL,
-	phonenumber VARCHAR (10) NOT NULL,
+	phonenumber VARCHAR (13) NOT NULL,
 	email TEXT,
 	note TEXT,
 	order_date DATE NOT NULL,
@@ -143,4 +144,4 @@ CREATE TABLE detail_order(
 ```
 **Bộ thiết kế**
 
-![image](https://user-images.githubusercontent.com/95128548/156822541-c2521120-e3b3-4259-ad45-e60b57ba7262.png)
+![image](https://user-images.githubusercontent.com/95128548/156873658-eec7a09f-70d4-435f-9aed-e97504ac1b8a.png)
