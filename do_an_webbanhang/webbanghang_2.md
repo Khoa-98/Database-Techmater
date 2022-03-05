@@ -109,8 +109,7 @@ CREATE TABLE discuss(
 	client_id INT,
 	parent_id INT,
 	FOREIGN KEY (employee_id) REFERENCES users (id),
-	FOREIGN KEY (client_id) REFERENCES users (id),
-	FOREIGN KEY (parent_id) REFERENCES discuss (id)
+	FOREIGN KEY (client_id) REFERENCES users (id)
 )
 ```
 
